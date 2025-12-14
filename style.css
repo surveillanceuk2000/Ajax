@@ -74,6 +74,7 @@ h4 {
     font-weight: 600;
     color: #2d1b4e;
     margin: 20px 0;
+    text-align: center;
 }
 
 /* Hero Section */
@@ -98,10 +99,6 @@ h4 {
 }
 
 /* Myths Sections */
-.myths-intro h2 {
-    margin-bottom: 10px;
-}
-
 .myth-image {
     width: 100%;
     margin: 0;
@@ -113,10 +110,6 @@ h4 {
     width: 100%;
     height: auto;
     display: block;
-}
-
-.myths-conclusion {
-    margin-top: -20px;
 }
 
 /* Feature Images */
@@ -146,33 +139,12 @@ h4 {
     display: block;
 }
 
-/* Feature Box */
-.feature-box {
-    background: rgba(255, 255, 255, 0.6);
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.feature-detail {
-    font-size: 1.1rem;
-    color: #5a5a5a;
-    line-height: 1.8;
-}
-
+/* Feature Intro */
 .feature-intro {
     font-size: 1.2rem;
     color: #5a5a5a;
     margin-bottom: 20px;
     text-align: center;
-}
-
-.tech-spec {
-    text-align: center;
-    font-size: 1rem;
-    color: #5a5a5a;
-    margin-top: 20px;
 }
 
 /* Color Badge */
@@ -244,6 +216,12 @@ h4 {
     display: block;
 }
 
+/* CTA Button Wrapper - для центрування */
+.cta-button-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
 .cta-button {
     display: inline-block;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -253,7 +231,6 @@ h4 {
     border: none;
     font-size: 1.1rem;
     font-weight: 600;
-    margin: 20px 0;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
