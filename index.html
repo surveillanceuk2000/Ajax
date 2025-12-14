@@ -25,13 +25,40 @@
     
     <link rel="stylesheet" href="style.css">
     
+    <!-- Google Consent Mode (GDPR Compliance) -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        // Set default consent mode - denied by default for GDPR compliance
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500
+        });
+        
+        // Additional regional settings for EEA
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'region': ['GB', 'IE', 'DE', 'FR', 'IT', 'ES', 'NL', 'BE', 'AT', 'SE', 'DK', 'FI', 'NO', 'PL', 'PT', 'GR', 'CZ', 'HU', 'RO', 'BG', 'HR', 'SK', 'SI', 'LT', 'LV', 'EE', 'CY', 'LU', 'MT']
+        });
+    </script>
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDSFQ03X7J"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-EDSFQ03X7J');
+        gtag('config', 'G-EDSFQ03X7J', {
+            'anonymize_ip': true,
+            'cookie_flags': 'SameSite=None;Secure'
+        });
     </script>
     
     <!-- Structured Data (JSON-LD) -->
@@ -161,8 +188,6 @@
                 <div class="design-image">
                     <img src="images/Pic7.jpg" alt="Elegant alarm design">
                 </div>
-                <div class="color-badge">Available in black and white</div>
-                <p class="section-footer">The first alarm that complements your interior.</p>
             </div>
         </div>
     </section>
@@ -190,7 +215,6 @@
                 <div class="feature-image">
                     <img src="images/Pic9.jpg" alt="Video surveillance">
                 </div>
-                <p class="section-footer">Silent threats. Instant response.</p>
             </div>
         </div>
     </section>
